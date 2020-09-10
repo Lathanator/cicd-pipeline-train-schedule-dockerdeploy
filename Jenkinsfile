@@ -14,7 +14,7 @@ pipeline {
             }
             steps {
                 script {
-                    app = docker.build("Lathanator/train-schedule")
+                    app = docker.build("lathanator/train-schedule")
                     app.inside {
                         sh 'echo $(curl localhost:8080)'
                     }
